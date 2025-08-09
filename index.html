@@ -26,6 +26,22 @@
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
         }
+
+        .box button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #1f1c2c;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .box button:hover {
+            background-color: #d1c4e9;
+        }
     </style>
 </head>
 <body>
@@ -36,18 +52,16 @@
         <div class="box">
             <h3><strong>EASY:</strong></h3>
             <p>In this easy mode, it is very simple. It is just an ordinary game of rock paper scissors. The computer will get to choose randomly and it will try to beat you. First to 5 wins. If you beat the computer in 1 round then you get 1 point. If the computer beats you in one round then the computer gets 1 point. If you tie, then no one gets anything. GOOD LUCK!</p>
+            <a href="easy.html"><button>Play Easy Mode</button></a>
         </div>
 
         <div class="box">
             <h3><strong>MEDIUM:</strong></h3>
             <p>In the middle mode, there are 5 options so you have to think harder. The computer still picks randomly but remember 5 is bigger than 3 so in this case it is harder.</p>
+            <a href="medium.html"><button>Play Medium Mode</button></a>
         </div>
 
         <div class="box">
             <h3><strong>HARD:</strong></h3>
             <p>In hard mode, the computer uses a prediction algorithm based on your previous choices. It tries to outsmart you, so you’ll need to be unpredictable and strategic. First to 7 wins. This mode is not for the faint-hearted!</p>
-        </div>
-    </div>
-</body>
-</html>
-
+            <a href="hard.html"><button>Play Hard Mode</button></a>
