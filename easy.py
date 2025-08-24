@@ -1,15 +1,15 @@
 import random
 import time
 
-# Score tracking
+#Scores
 players_score = 0
 computers_score = 0
 round_number = 1
 
-# Valid choices
+#Choices
 possible_actions = ["rock", "paper", "scissors"]
 
-# Outcome messages
+#CPU-Messages
 win_messages = [
     "That was just luck!",
     "You're getting good at this!",
@@ -26,11 +26,11 @@ tie_messages = [
     "No points this time!"
 ]
 
-# ASCII art
-ascii_art = {
+#art
+art = {
     "rock": "🪨",
     "paper": "📄",
-    "scissors": "✂️"
+    "scissors": "✂"
 }
 
 def get_result(player, computer):
@@ -57,7 +57,7 @@ time.sleep(1)
 # Practice round
 practice_action = input("Practice round! Choose (rock, paper, scissors): ").lower()
 practice_computer = random.choice(possible_actions)
-print(f"You chose {ascii_art.get(practice_action, practice_action)} and the computer chose {ascii_art[practice_computer]}")
+print(f"You chose {art.get(practice_action, practice_action)} and the computer chose {art[practice_computer]}")
 time.sleep(1)
 
 # Main game loop
@@ -81,7 +81,7 @@ while players_score < 5 and computers_score < 5:
     computers_action = random.choice(possible_actions)
     result = get_result(players_action, computers_action)
 
-    print(f"You chose {ascii_art[players_action]} and the computer chose {ascii_art[computers_action]}")
+    print(f"You chose {art[players_action]} and the computer chose {art[computers_action]}")
     time.sleep(0.6)
 
     if result == "win":
@@ -104,8 +104,8 @@ time.sleep(1)
 if players_score == 5:
     print("🏆 You reached 5 points first. YOU WIN!")
     time.sleep(0.6)
-    print("🤖 I’ll admit defeat... but next time, I won’t go easy on you.")
+    print("🤖 I’ll beat you next time and i won't go easy on you.")
 else:
     print("💀 The computer reached 5 points first. YOU LOSE!")
     time.sleep(0.6)
-    print("🤖 Bow before the RPS overlord! 🧠✂️📄🪨")
+    print("🤖 You will always kneel before me 🧠✂️📄🪨")
