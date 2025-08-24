@@ -23,21 +23,17 @@ symbols = {
 comp_comments = {
     "win": [
         "I won because I’m clearly better. 😎",
-        "Another one bites the dust. 💥",
-        "You tried... but I’m elemental royalty. 👑",
-        "Victory tastes like ozone and smugness. 💨"
+        "Another one bites the dust (that's you BTW). 💥",
+        "Victory is a taste that I am rather used to. 💨"
     ],
     "lose": [
-        "Wait... how did you beat me?! 😳",
-        "No fair! I demand a rematch. 😤",
         "You got lucky. Don’t get used to it. 😒",
-        "Fine, you win this round. But I’m watching you. 👀"
+        "Fine, you win this round. But I’m watching you. 👀",
+        "That was just a fluke and of course I was going easy on you. 😲"
     ],
     "tie": [
         "A tie? We’re evenly matched... for now. 🤝",
-        "Balance in the elements. Respect. 🧘",
-        "We both chose wisely. Or foolishly. 😅",
-        "No winner this time. Let’s go again! 🔁"
+        "A tie between the good and great. How can it be? 🤔"
     ]
 }
 
